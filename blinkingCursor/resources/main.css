@@ -1,0 +1,31 @@
+#wrapper {
+  width: 80%;
+  height: 80vh;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin-left: -40%;
+  margin-top: -40vh;
+  text-align: center;
+  line-height: 80vh;
+  background: linear-gradient(to top right, #F57E5B, #969AA0);
+  border-radius: 2%;
+  box-shadow: 5px 5px 30px rgba(0,0,0,0.5);
+}
+
+#cursor {
+  font-size: 10vw;
+  font-weight: 600;
+  -webkit-animation: 1.2s blink step-end infinite;
+  animation: 1.2s blink step-end infinite;
+}
+
+@-webkit-keyframes blink {
+  0%  { color: transparent; }
+  50% { color: #3C3D40; }
+}
+
+@keyframes blink {
+  0%  { color: transparent; }
+  50% { color: #3C3D40; }
+}
