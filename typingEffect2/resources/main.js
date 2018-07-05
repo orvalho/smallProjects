@@ -5,6 +5,7 @@ function main() {
   const WORDS = ["dream", "create", "inspire"];
   const SPEED_WRITE = 300;
   const SPEED_CHANGE_WORD = 200;
+  const SPEED_RESET = 100;
   const wordsLength = WORDS.length;
   let i = 0; // index of letter in a word
   let j = 0; // index of word in an array of words
@@ -26,6 +27,13 @@ function main() {
       j++; // next word
       i = 0; // reset i
       setTimeout(typeWriter, SPEED_CHANGE_WORD);
+    }
+    // reset and loop forever
+    else {
+      i = 0; // reset i
+      j = 0; // reset j
+      element.textContent = ""; // clear
+      setTimeout(typeWriter, SPEED_RESET);
     }
   }
 }
