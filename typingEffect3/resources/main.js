@@ -32,6 +32,7 @@ const main = () => {
 
   const typeWriter = () => {
     const SPEED_WRITE = 300;
+    const SPEED_RESET = 100;
     j = 0; // reset j
     // write a word one letter at a time
     if(i < getLongestWordLength()) {
@@ -44,13 +45,19 @@ const main = () => {
       i++;
       setTimeout(typeWriter, SPEED_WRITE);
     }
-
-
-
-
+    // reset and loop forever
+    else {
+      for(; j < wordsLength; j++) {
+        tags[j].textContent = ""; // clear
+      }
+      i = 0; // reset i
+      j = 0; // reset j
+      setTimeout(typeWriter, SPEED_RESET);
+    }
   };
 
   typeWriter();
+  
 };
 
 window.addEventListener('load', main);
