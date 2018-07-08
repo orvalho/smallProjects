@@ -7,6 +7,7 @@ const main = () => {
   const text = document.querySelector('#text');
 
   let j = 0; // index of word in an array of words
+  let i = 0; // index of letter in a word
 
   const createElement = tagName => {
     let tag = document.createElement(tagName);
@@ -27,6 +28,29 @@ const main = () => {
     return longestWordLength;
   };
 
+  const tags = document.querySelectorAll('#text p');
+
+  const typeWriter = () => {
+    const SPEED_WRITE = 300;
+    j = 0; // reset j
+    // write a word one letter at a time
+    if(i < getLongestWordLength()) {
+      for(; j < wordsLength; j++){
+        if(i < WORDS[j].length){
+          tags[j].textContent += WORDS[j].charAt(i);
+        }
+      }
+      j = 0; // reset j
+      i++;
+      setTimeout(typeWriter, SPEED_WRITE);
+    }
+
+
+
+
+  };
+
+  typeWriter();
 };
 
 window.addEventListener('load', main);
