@@ -16,6 +16,17 @@ const main = () => {
   for(; j < wordsLength; j++) {
     createElement('p');
   }
+
+  const getLongestWordLength = () => {
+    let longestWordLength = 0;
+    for(let n = 0; n < wordsLength; n++) {
+      if(WORDS[n].length > longestWordLength) {
+        longestWordLength = WORDS[n].length;
+      }
+    }
+    return longestWordLength;
+  };
+
 };
 
 window.addEventListener('load', main);
