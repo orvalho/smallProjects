@@ -3,8 +3,10 @@
 const main = () => {
   const WORDS = ["believe", "imagine", "encourage"];
   const SPEED_WRITE = 100;
-  let i = 0; // index of letter in a word
+  const SPEED_DELETE = 150;
+  let i = 0; // index of letter in a word, while writting the word
   let j = 0; // index of word in an array of words
+  let k = WORDS[j].length - 1; // index of letter in a word, while deleting the word
 
   // select an element to write text to
   const element = document.querySelector('#element');
@@ -15,6 +17,12 @@ const main = () => {
       element.textContent += WORDS[j].charAt(i);
       i++;
       setTimeout(typeWriter, SPEED_WRITE);
+    }
+    // delete word one letter at a time
+    else if(k >= 0) {
+      element.textContent = element.textContent.slice(0, k);
+      k--;
+      setTimeout(typeWriter, SPEED_DELETE);
     }
   };
 
