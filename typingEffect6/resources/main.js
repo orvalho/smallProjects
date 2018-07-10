@@ -6,9 +6,12 @@ const main = () => {
 
   const SPEED_WRITE = 150;
   const SPEED_WRITE_NEXT_WORD = 200;
+  const SPEED_DELETE = 100;
 
   let j = 0; // index of word in an array of words, while writing
   let i = 0; // index of letter in a word, while writing
+  let m = wordsLength - 1; // index of word in an array of words, while deleting
+  let k = WORDS[m].length - 1; // index of letter in a word, while deleting
 
   const text = document.querySelector('#text');
 
@@ -36,6 +39,12 @@ const main = () => {
       j++; // go to next word
       i = 0; // reset i
       setTimeout(typeWriter, SPEED_WRITE_NEXT_WORD);
+    }
+    // delete a word one letter at a time
+    else if(k >= 0) {
+      tags[m].textContent = tags[m].textContent.slice(0, k);
+      k--;
+      setTimeout(typeWriter, SPEED_DELETE);
     }
   };
 
