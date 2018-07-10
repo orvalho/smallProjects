@@ -8,6 +8,7 @@ const main = () => {
   const SPEED_WRITE_NEXT_WORD = 200;
   const SPEED_DELETE = 100;
   const SPEED_DELETE_NEXT_WORD = 200;
+  const SPEED_RESET = 100;
   
   let j = 0; // index of word in an array of words, while writing
   let i = 0; // index of letter in a word, while writing
@@ -52,6 +53,14 @@ const main = () => {
       m--; // go to next word
       k = WORDS[m].length - 1; // reset k
       setTimeout(typeWriter, SPEED_DELETE_NEXT_WORD);
+    }
+    // reset and loop forever
+    else {
+      i = 0; // reset i
+      j = 0; // reset j
+      m = wordsLength - 1; // reset m
+      k = WORDS[m].length - 1; // reset k
+      setTimeout(typeWriter, SPEED_RESET);
     }
   };
 
