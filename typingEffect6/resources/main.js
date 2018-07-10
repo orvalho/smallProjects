@@ -5,6 +5,7 @@ const main = () => {
   const wordsLength = WORDS.length;
 
   const SPEED_WRITE = 150;
+  const SPEED_WRITE_NEXT_WORD = 200;
 
   let j = 0; // index of word in an array of words, while writing
   let i = 0; // index of letter in a word, while writing
@@ -29,6 +30,12 @@ const main = () => {
       tags[j].textContent += WORDS[j].charAt(i);
       i++;
       setTimeout(typeWriter, SPEED_WRITE);
+    }
+    // write next word
+    else if (j < wordsLength - 1) {
+      j++; // go to next word
+      i = 0; // reset i
+      setTimeout(typeWriter, SPEED_WRITE_NEXT_WORD);
     }
   };
 
