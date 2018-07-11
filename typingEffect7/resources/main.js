@@ -16,7 +16,8 @@ const main = () => {
 
   const SPEED_WRITE = 200;
   const SPEED_DELETE = 500;
-
+  const SPEED_RESET = 300;
+  
   // select an element to write text to
   const element = document.querySelector('#element');
 
@@ -38,6 +39,14 @@ const main = () => {
       element.textContent += WORD.charAt(j);
       j++;
       setTimeout(typeWriter, SPEED_WRITE);
+    }
+    // reset and loop forever
+    else {
+      element.textContent = ""; // clear
+      i = 0; // reset i
+      k = wordWithMistakeLength - 1; // reset k
+      j = MISTAKE_AT; // reset j
+      setTimeout(typeWriter, SPEED_RESET);
     }
   };
 
