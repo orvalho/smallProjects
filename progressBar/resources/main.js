@@ -15,7 +15,7 @@ const progressBar = () => {
   const frame = () => {
     if(innerWidth < outerWidth) {
       innerWidth++;
-      inner.style.width = `${innerWidth}px`;
+      inner.style.width = `${innerWidth / outerWidth * 100}%`;
       percentValue = Math.round(innerWidth / outerWidth * 100);
       percent.textContent = `${percentValue}%`;
       setTimeout(frame, SPEED);
