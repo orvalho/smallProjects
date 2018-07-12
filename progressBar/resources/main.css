@@ -18,7 +18,13 @@
 }
 
 #percent {
-  font-size: 15vw;
+  font-size: 15vh;
   color: #FF6C43;
   text-align: center;
+  width: 80%;
+  position: absolute;
+  top: 35%;
+  left: 50%;
+  margin-left: -40%;
+  margin-top: -7.5vh;
 }
