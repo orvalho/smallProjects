@@ -1,0 +1,44 @@
+/* variables */
+:root{
+  --pink-light: #F391BD;
+  --pink-dark: #EA3788;
+  --pink-very-dark: #541B3D;
+  --border-rad: 50%;
+}
+
+/* body */
+body {
+  background: var(--pink-light);
+  font-family: cursive;
+}
+
+/* outer circle */
+#outer {
+  background-color: var(--pink-dark);
+  border-radius: var(--border-rad);
+  width: 10em;
+  height: 10em;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin-left: -5em;
+  margin-top: -5em;
+  transition: all .2s ease-in-out;
+}
+
+/* inner circle */
+#inner {
+  background-color: var(--pink-light);
+  border-radius: var(--border-rad);
+  width: 8em;
+  height: 8em;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin-left: -4em;
+  margin-top: -4em;
+  text-align: center;
+  line-height: 8em;
+  font-weight: 700;
+  color: var(--pink-very-dark);
+}
