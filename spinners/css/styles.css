@@ -119,6 +119,22 @@
   animation: spinnerReverse 0.7s linear infinite;
 }
 
+.spinner-8{
+  content: '';
+  box-sizing: border-box;
+  position: absolute;
+  top: 60%;
+  left: 80%;
+  width: 80px;
+  height: 80px;
+  margin-top: -40px;
+  margin-left: -40px;
+  border-width: 40px;
+  border-color: rgb(255, 255, 70) rgb(193, 248, 45) rgb(79, 181, 53) rgb(37, 139, 65);
+  border-style: solid;
+  animation: spinnerReverse 0.9s linear infinite;
+}
+
 @keyframes spinner{
   to {
     transform: rotate(360deg);
