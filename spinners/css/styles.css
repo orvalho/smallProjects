@@ -31,6 +31,25 @@
   animation: spinner 1s ease-out infinite;
 }
 
+.spinner-3{
+  content: '';
+  box-sizing: border-box;
+  position: absolute;
+  top: 30%;
+  left: 60%;
+  width: 80px;
+  height: 80px;
+  margin-top: -40px;
+  margin-left: -40px;
+  border-radius: 50%;
+  border: 7px solid transparent;
+  border-top-color: rgb(182, 254, 126);
+  border-right-color: rgb(91, 222, 156);
+  border-bottom-color: rgb(1, 183, 187);
+  border-left-color: rgb(4, 98, 124);
+  animation: spinner 0.5s linear infinite;
+}
+
 @keyframes spinner{
   to {
     transform: rotate(360deg);
