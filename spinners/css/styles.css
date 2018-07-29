@@ -102,8 +102,31 @@
   animation: spinner 0.7s linear infinite;
 }
 
+.spinner-7{
+  content: '';
+  box-sizing: border-box;
+  position: absolute;
+  top: 60%;
+  left: 60%;
+  width: 80px;
+  height: 80px;
+  margin-top: -40px;
+  margin-left: -40px;
+  border-radius: 40%;
+  border-width: 5px;
+  border-color: rgb(171, 224, 172) rgb(254, 216, 51);
+  border-style: dotted double;
+  animation: spinnerReverse 0.7s linear infinite;
+}
+
 @keyframes spinner{
   to {
     transform: rotate(360deg);
+  }
+}
+
+@keyframes spinnerReverse{
+  to {
+    transform: rotate(-360deg);
   }
 }
