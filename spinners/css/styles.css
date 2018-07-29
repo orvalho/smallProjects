@@ -87,6 +87,21 @@
   animation: spinner 0.6s linear infinite;
 }
 
+.spinner-6{
+  content: '';
+  box-sizing: border-box;
+  position: absolute;
+  top: 60%;
+  left: 40%;
+  width: 80px;
+  height: 80px;
+  margin-top: -40px;
+  margin-left: -40px;
+  border-radius: 20%;
+  border: 4px dashed rgb(2, 145, 151);
+  animation: spinner 0.7s linear infinite;
+}
+
 @keyframes spinner{
   to {
     transform: rotate(360deg);
