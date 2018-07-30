@@ -1,0 +1,50 @@
+/* variables */
+:root{
+  --dark-purple: rgb(87, 24, 69);
+  --purple: rgb(144, 12, 62);
+  --yellow: rgb(255, 195, 0);
+  --orange: rgb(255, 87, 51);
+  --red: rgb(199, 0, 57);
+}
+
+body{
+  background: var(--dark-purple);
+  color: var(--yellow);
+  font-size: 30px;
+  text-align: center;
+}
+
+.empty{
+  display: inline-block;
+  width: 200px;
+  height: 200px;
+  margin: 50px;
+  border: 10px solid var(--red);
+  background-color: var(--orange);
+  transition: all 0.5s linear;
+}
+
+.fill{
+  width: 190px;
+  height: 190px;
+  position: relative;
+  top: 5px;
+  left: 5px;
+  background-image: url('http://source.unsplash.com/random/190x190');
+  cursor: pointer;
+}
+
+.hold{
+  border: 10px solid var(--yellow);
+}
+
+.hover{
+  transform: scale(1.1);
+  border-style: dashed;
+  border-color: var(--purple);
+  background-color: var(--yellow);
+}
+
+.invisible{
+  display: none;
+}
