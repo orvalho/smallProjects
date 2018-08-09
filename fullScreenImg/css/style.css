@@ -1,0 +1,94 @@
+/* colors */
+:root{
+  --white: #fff;
+  --grey: #212121;
+}
+
+*{
+  margin: 0;
+  padding: 0;
+}
+
+body{
+  font-family: cursive;
+  font-size: 15px;
+  color: var(--white);
+  line-height: 1.5;
+}
+
+#showcase{
+  background-image: url("https://preview.ibb.co/czuw0p/women.jpg");
+  background-size: cover;
+  background-position: center;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 0 20px;
+}
+
+#showcase h1{
+  font-size: 50px;
+  line-height: 1.1;
+}
+
+#showcase p{
+  margin-top: 10px;
+  font-size: 25px;
+}
+
+#showcase .button{
+  text-decoration: none;
+  color: var(--white);
+  font-size: 22px;
+  border: 2px solid var(--white);
+  border-radius: 20px;
+  padding: 5px 10px;
+  margin-top: 30px;
+}
+
+#showcase .button:hover{
+  background-color: var(--white);
+  color: var(--grey);
+}
+
+#section-A, #section-B{
+  padding: 20px;
+  text-align: center;
+}
+
+#section-A{
+  color: var(--grey);
+}
+
+#section-A a{
+  color: var(--grey);
+}
+
+#section-A p, h2{
+  margin-bottom: 10px;
+}
+
+#section-B{
+  background-color: var(--grey);
+}
+
+#section-B a{
+  color: var(--white);
+}
+
+#section-B p, h2{
+  margin-bottom: 10px;
+}
+
+#section-C{
+  display: flex;
+  color: var(--grey);
+}
+
+#section-C div{
+  padding: 20px;
+  text-align: center;
+}
