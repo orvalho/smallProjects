@@ -14,4 +14,5 @@ Small JavaScript projects
  - [x] [Login form](https://codepen.io/o_rvalho/pen/XBzKGb)
  - [x] [Spinners](https://codepen.io/o_rvalho/pen/qyVgdY)
  - [x] [DragnDrop](https://codepen.io/o_rvalho/pen/gjovNa)
- - [x] [FullScreenImg](https://codepen.io/o_rvalho/pen/WKLRzz) 
+ - [x] [FullScreenImg](https://codepen.io/o_rvalho/pen/WKLRzz)
+ - [x] [Parallax](https://codepen.io/o_rvalho/pen/ejbqbJ) 
