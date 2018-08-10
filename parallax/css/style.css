@@ -1,0 +1,95 @@
+body, html{
+  height: 100%;
+  margin: 0;
+  font-size: 18px;
+  font-family: monospace;
+  line-height: 1.5em;
+}
+
+.img{
+  position: relative;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  opacity: 0.6;
+}
+
+#img1{
+  background-image: url("../images/leaves1.jpeg");
+  min-height: 100%;
+}
+
+#img2{
+  background-image: url("../images/leaves2.jpeg");
+  min-height: 500px;
+}
+
+#img3{
+  background-image: url("../images/leaves3.jpeg");
+  min-height: 500px;
+}
+
+#img4{
+  background-image: url("../images/leaves4.jpeg");
+  min-height: 500px;
+}
+
+#img5{
+  background-image: url("../images/leaves5.jpeg");
+  min-height: 500px;
+}
+
+section{
+  text-align: center;
+  padding: 50px 60px;
+}
+
+section h2{
+  font-size: 30px;
+}
+
+section a{
+  color: #DB8200;
+  font-weight: 900;
+}
+
+.section-green{
+  background-color: #273B30;
+  color: #fff;
+}
+
+.text{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 100%;
+  transform: translate(-50%, -50%);
+  font-weight: 700;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+.text span{
+  font-size: 2.8rem;
+  line-height: 2em;
+  padding: 0.5rem 1rem;
+  box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.5);
+  box-decoration-break: clone;
+  -webkit-box-decoration-break: clone;
+}
+
+.text .background-dark{
+  background-color: #000;
+  color: #fff;
+}
+
+.text .background-light{
+  background-color: #fff;
+}
+
+@media(max-width:568px){
+  .img{
+    background-attachment: scroll;
+  }
+}
