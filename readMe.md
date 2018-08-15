@@ -16,4 +16,5 @@ Small JavaScript projects
  - [x] [DragnDrop](https://codepen.io/o_rvalho/pen/gjovNa)
  - [x] [FullScreenImg](https://codepen.io/o_rvalho/pen/WKLRzz)
  - [x] [Parallax](https://codepen.io/o_rvalho/pen/ejbqbJ)
- - [x] [FullScreenVidBg](https://codepen.io/o_rvalho/pen/ZjPxLX?editors=1100) 
+ - [x] [FullScreenVidBg](https://codepen.io/o_rvalho/pen/ZjPxLX?editors=1100)
+ - [x] [PricingTables](https://codepen.io/o_rvalho/pen/bjyJrg) 
