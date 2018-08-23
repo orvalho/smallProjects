@@ -1,0 +1,217 @@
+/*************************************
+GENERAL
+*************************************/
+body {
+  font-family: 'Open Sans', sans-serif;
+}
+
+#wrapper {
+  max-width: 940px;
+  margin: 0 auto;
+  padding: 0 5%;
+}
+
+a {
+  text-decoration: none;
+}
+
+img {
+  max-width: 100%;
+}
+
+h3 {
+  margin: 0 0 1em;
+}
+
+
+
+/*************************************
+HEADING
+*************************************/
+header {
+  float: left;
+  margin: 0 0 30px;
+  padding: 5px 0 0;
+  width: 100%;
+}
+
+#logo {
+  text-align: center;
+  margin: 0;
+}
+
+h1 {
+  font-family: 'Roboto', sans-serif;
+  letter-spacing: 0.05em;
+  font-size: 1.75em;
+  line-height: 0.8em;
+  margin-right: 10px;
+}
+
+h2 {
+  font-family: 'Roboto', sans-serif;
+  letter-spacing: 0.05em;
+  font-size: 0.9em;
+  margin: -5px 0 0;
+  font-weight: normal;
+}
+
+
+
+/*************************************
+NAVIGATION
+*************************************/
+nav {
+  text-align: center;
+  padding: 10px 0;
+  margin: 20px 0 0;
+}
+
+nav ul {
+  list-style: none;
+  margin: 0 10px;
+  padding: 0;
+}
+
+nav li {
+  display: inline-block;
+}
+
+nav a {
+  font-weight: 800;
+  padding: 15px 10px;
+}
+
+
+
+/*************************************
+FOOTER
+*************************************/
+footer {
+  font-size: 0.75em;
+  text-align: center;
+  clear: both;
+  padding-top: 50px;
+}
+
+footer a {
+  margin: 0.5em;
+}
+
+
+
+/*************************************
+PAGE: PORTFOLIO
+*************************************/
+#gallery {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+#gallery li {
+  float: left;
+  width: 45%;
+  margin: 2.5%;
+}
+
+#gallery li a figcaption {
+  margin: 0;
+  padding: 5%;
+  font-size: 0.75em;
+}
+
+#portfolio-heading {
+  margin-left: 2.5%;
+}
+
+/*************************************
+PAGE: ABOUT
+*************************************/
+.profile-photo {
+  display: block;
+  max-width: 150px;
+  margin: 0 auto 30px;
+  border-radius: 100%;
+}
+
+
+
+/*************************************
+PAGE: CONTACT
+*************************************/
+.contact-info {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  font-size: 0.9em;
+}
+
+.contact-info a {
+  display: block;
+  min-height: 20px;
+  background-repeat: no-repeat;
+  background-size: 20px 20px;
+  padding: 0 0 0 30px;
+  margin: 0 0 5px 10px;
+}
+
+.contact-info li.phone a {
+  background-image: url('../img/phone.svg');
+}
+.contact-info li.mail a {
+  background-image: url('../img/mail.svg');
+}
+.contact-info li.twitter a {
+  background-image: url('../img/twitter.svg');
+}
+
+
+
+/*************************************
+COLORS
+*************************************/
+/* site body */
+body {
+  background-color: #E9F75A;
+  color: #222222;
+}
+
+/* purple header */
+header {
+  background: #4B2067;
+}
+
+/* nav background on mobile */
+nav {
+  background: #8A60B6;
+}
+
+/* logo text */
+h1, h2 {
+  color: #fff;
+}
+
+/* nav links */
+nav a, nav a:visited {
+  color: #fff;
+}
+
+/* selected nav links */
+nav a.selected, nav a:hover {
+  color: #E9F75A;
+}
+
+/* gallery */
+#gallery li {
+  background-color: #8A60B6;
+}
+
+#gallery li a figcaption {
+  color: #fff;
+}
+
+/* links */
+.contact-info a, #twitter-link  {
+  color: #4B2067;
+}
